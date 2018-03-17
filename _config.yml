@@ -61,14 +61,13 @@ kramdown:
 
 # Gitalk
 gitalk:
-  enable: true    #是否开启Gitalk评论
+  enable: true                                              #是否开启Gitalk评论
   clientID: cad52a6d2d9fdf45df8b                           #生成的clientID
   clientSecret: 40f66a5518bf468c58851960d0b86f6cbfd82ed4    #生成的clientSecret
   repo: lefinite.github.io    #仓库名称
-  owner: lefinite,    #github用户名
-  admin: [lefinite],
-  id: window.location.pathname,
-  distractionFreeMode: false, #是否启用类似FB的阴影遮罩
+  owner: lefinite   #github用户名
+  admin: lefinite
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
