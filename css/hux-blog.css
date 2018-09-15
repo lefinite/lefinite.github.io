@@ -626,7 +626,7 @@ pre code {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: "PingFang SC",  "Microsoft YaHei",  "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC",  "Noto Sans CJK TC", serif;
   color: #808080;
   font-size: 12px;
   font-style: italic;
