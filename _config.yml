@@ -67,7 +67,6 @@ gitalk:
   repo: lefinite.github.io    #仓库名称
   owner: lefinite   #github用户名
   admin: lefinite
-  id: md5(window.location.pathname),
   distractionFreeMode: false #是否启用类似FB的阴影遮罩
 
 
