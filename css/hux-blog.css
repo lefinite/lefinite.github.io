@@ -588,7 +588,7 @@ pre code {
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
 }
 .intro-header .post-heading .meta a {
   color: white;
@@ -626,9 +626,9 @@ pre code {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  font-family: "PingFang SC",  "Microsoft YaHei",  "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC",  "Noto Sans CJK TC", serif;
+  font-family: 'Lora', 'Times New Roman', serif;
   color: #808080;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   margin-top: 0;
 }
