@@ -88,19 +88,16 @@ layout: default
                 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
                 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
                 <div id="gitalk-container"></div>
-                <!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
-                <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
-                <script src="{{ site.baseurl }}/js/md5.min.js"></script>
                 <script type="text/javascript">
                     var gitalk = new Gitalk({
-                        clientID: '{{ theme.gitalk.ClientID }}',
-                        clientSecret: '{{ theme.gitalk.ClientSecret }}',
-                        repo: '{{ theme.gitalk.repo }}',
-                        owner: '{{ theme.gitalk.githubID }}',
-                        admin: ['{{ theme.gitalk.adminUser }}'],
-                        id: decodeURI(location.pathname),
-                        distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
-                    })
+                    clientID: '{{site.gitalk.clientID}}',
+                    clientSecret: '{{site.gitalk.clientSecret}}',
+                    repo: '{{site.gitalk.repo}}',
+                    owner: '{{site.gitalk.owner}}',
+                    admin: ['{{site.gitalk.admin}}'],
+                    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+                    id: decodeURI(location.pathname),
+                    });
                     gitalk.render('gitalk-container');
                 </script>
                 {% endif %}
@@ -205,12 +202,11 @@ layout: default
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
     async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
-        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
-        // anchors.options = {
-        //   visible: 'always',
-        //   placement: 'right',
-        //   icon: '#'
-        // };
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon:
+        };
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
 </script>
