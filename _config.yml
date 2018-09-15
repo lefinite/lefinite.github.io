@@ -1,9 +1,9 @@
 # Site settings
 title: Bubble island
 SEOTitle: lefinite | Bubble island
-header-img: img/post-bg-desk.jpg
+header-img: img/post-bg-Ocean.jpg
 email: lefinite@live.com
-description: "Every failure is leading towards success."
+description: "我说的都是错的啊。"
 keyword: "lefinite, lefiniti, 赵旭平, 平儿, 产品经理, 设计师,"
 url: "http://lefinite.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
